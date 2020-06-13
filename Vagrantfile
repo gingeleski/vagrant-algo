@@ -3,7 +3,8 @@
 
 Vagrant.configure(2) do |config|
 
-  config.vm.box = "bento/ubuntu-19.10"
+  # Supports Hyper-V if : vagrant up --provider hyperv
+  config.vm.box = "bento/ubuntu-18.04"
 
   config.vm.network "public_network"
 
